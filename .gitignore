@@ -87,5 +87,3 @@ coverage/
 externals/
 htmlcov/
 gmon.out
-
-PCbuild/.vs/
