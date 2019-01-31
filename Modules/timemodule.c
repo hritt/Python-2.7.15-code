@@ -42,6 +42,12 @@ extern int ftime(struct timeb *);
 #include <windows.h>
 #include "pythread.h"
 
+#if defined _MSC_VER && _MSC_VER >= 1900
+#define timezone _timezone
+#define tzname _tzname
+#define daylight _daylight
+#endif
+
 /* helper to allow us to interrupt sleep() on Windows*/
 static HANDLE hInterruptEvent = NULL;
 static BOOL WINAPI PyCtrlHandler(DWORD dwCtrlType)
