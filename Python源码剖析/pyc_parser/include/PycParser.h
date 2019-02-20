@@ -39,7 +39,7 @@ using namespace std;
 #define TYPE_SET		'<'
 #define TYPE_FROZENSET  	'>'
 
-#define MAGIC (62131 | ((long)'\r'<<16) | ((long)'\n'<<24))
+#define MAGIC (62211 | ((long)'\r'<<16) | ((long)'\n'<<24))
 
 class PycParser
 {
