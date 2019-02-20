@@ -68,7 +68,7 @@ public:
 			return NULL;
 		}
 
-		long modifiedTime = ReadModifiedTime();
+		time_t modifiedTime = ReadModifiedTime();
 		cout << "[Info] : Last Modified Time : " << asctime(localtime(&modifiedTime)) << "\n\n\n";
 		PyObject* code = ReadObject();
 
